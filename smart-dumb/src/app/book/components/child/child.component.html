@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let item of dataToDisplay">{{item.name}} {{item.desc}}
+        <button (click)="executeAction(item, 'edit')">EDIT</button>
+        <button (click)="executeAction(item, 'delete')">DELETE</button>
+    </li>
+</ul>
